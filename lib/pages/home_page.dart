@@ -10,10 +10,19 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("catalog app"),
+        backgroundColor: Colors.white,
+        elevation: 0,
+        iconTheme: const IconThemeData(color: Colors.black),
+        
+        title: const Text(
+          "catalog app",
+          style: TextStyle(color: Colors.black),
+        ),
       ),
       body: Center(
-        child: Container(child: Text("learn flutter in $days days")),
+        child: Container(
+          child: Text("learn flutter in $days days"),
+        ),
       ),
       drawer: const MyDrawer(),
     );
